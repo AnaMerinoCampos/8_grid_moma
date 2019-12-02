@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --azul: turquoise;
+            --naranja: orange;
+            --gris: Gray;
+            --azul2: #00afd7;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 900;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+/*            grid-gap: 20px;*/
+            grid-template-rows: repeat(4, 200px);
+        }
+        .expos{
+/*            background: #00afd7;*/
+            overflow: hidden;
+        }
+        expos img{
+            object-fit: cover;
+            object-position: center center;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        .e1, .e4, .e5, .e8{
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+            padding: 2em 3em;
+        }
+        .e2, .e3, .e6, .e7{
+            grid-column: span 3;
+        }
+        .e1{
+            background: var(--azul)
+        }
+        .e4{
+            background: var(--naranja)
+        }
+        .e5{
+            background: var(--gris)
+        }
+        .e8{
+            background: var(--azul2)
+        }
+        h1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="expos e1">
+            <h1>Takis</h1>
+            <h3>Desde 22 de noviembre de 2019 hasta 19 de abril de 2020</h3>
+        </div>
+        <div class="expos e2">
+            <img src="img/takis.jpg" alt="">
+        </div>
+        <div class="expos e3">
+            <img src="img/th_5f3e0901dcf1765448a3292ea0888842_BODEGA.oleo-sobre-lienzo.-120-x-120-cm-copia.jpg" alt="">
+        </div>
+        <div class="expos e4">
+            <h1>INFOXICACIÓN</h1>
+            <h3>Del 12 marzo - 13 abril 2019</h3>
+        </div>
+        <div class="expos e5">
+            <h1>Tutankhamon: La tumba y sus tesoros</h1>
+            <h2>Del 23 de noviembre al 19 de abrildel 20</h2>
+        </div>
+        <div class="expos e6">
+            <img src="img/tutankhamon_1.jpg" alt="">
+        </div>
+        <div class="expos e7">
+            <img src="img/collage-2-w.jpg" alt="">
+        </div>
+        <div class="expos e8">
+            <h1>Collage to Landscape</h1>
+            <h3>Del 8 marzo - 12 abril 2016</h3>
+        </div>
+    </div>
+</body>
+</html>
